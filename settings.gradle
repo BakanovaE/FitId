@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "FitId"
+include ':app'
+include ':core'
+include ':network'
+include ':feature:exercises:exercises_api'
+include ':feature:exercises:exercises_impl'
+include ':feature:welcome:welcome_api'
+include ':feature:welcome:welcome_impl'
+include ':design_system'
+include ':feature:settings:settings_api'
+include ':feature:settings:settings_impl'
+include ':core_impl'
